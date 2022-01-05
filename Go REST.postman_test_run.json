@@ -1,0 +1,210 @@
+{
+	"id": "87049a1d-21f2-4057-973a-38dcee9604bc",
+	"name": "Go REST",
+	"timestamp": "2022-01-05T21:44:47.132Z",
+	"collection_id": "b9e99b99-093e-44ab-8f3c-debea66f87c0",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9a41e5bd-b9c2-4ce3-8b46-0f8fbe5cb516",
+			"name": "post_create_new",
+			"url": "https://gorest.co.in/public/v1/users",
+			"time": 560,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				560
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "07a0e188-cb9f-4493-b3dc-957a70b929e2",
+			"name": "post_create_email_error_validation",
+			"url": "https://gorest.co.in/public/v1/users",
+			"time": 194,
+			"responseCode": {
+				"code": 422,
+				"name": "Unprocessable Entity"
+			},
+			"tests": {
+				"Error code 422": true
+			},
+			"testPassFailCounts": {
+				"Error code 422": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Error code 422": true
+				}
+			]
+		},
+		{
+			"id": "20e19db0-08fd-4e34-8d03-f94d13a12b10",
+			"name": "get_created_user",
+			"url": "https://gorest.co.in/public/v1/users/6738",
+			"time": 194,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e47d3762-f803-4ac6-8785-cd140c96aeac",
+			"name": "put_change_status",
+			"url": "https://gorest.co.in/public/v1/users/6738",
+			"time": 196,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				196
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "750496c2-3ded-495e-85a6-7293c7d4356e",
+			"name": "get_change_checking",
+			"url": "https://gorest.co.in/public/v1/users/6738",
+			"time": 190,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status is changed to active": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is changed to active": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status is changed to active": true
+				}
+			]
+		},
+		{
+			"id": "6367edaf-b33a-4c42-b046-fea691480558",
+			"name": "delete_user",
+			"url": "https://gorest.co.in/public/v1/users/6738",
+			"time": 193,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204 No Content": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204 No Content": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Status code is 204 No Content": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1527,
+	"collection": {
+		"requests": [
+			{
+				"id": "9a41e5bd-b9c2-4ce3-8b46-0f8fbe5cb516",
+				"method": "POST"
+			},
+			{
+				"id": "07a0e188-cb9f-4493-b3dc-957a70b929e2",
+				"method": "POST"
+			},
+			{
+				"id": "20e19db0-08fd-4e34-8d03-f94d13a12b10",
+				"method": "GET"
+			},
+			{
+				"id": "e47d3762-f803-4ac6-8785-cd140c96aeac",
+				"method": "PUT"
+			},
+			{
+				"id": "750496c2-3ded-495e-85a6-7293c7d4356e",
+				"method": "GET"
+			},
+			{
+				"id": "6367edaf-b33a-4c42-b046-fea691480558",
+				"method": "DELETE"
+			}
+		]
+	}
+}
