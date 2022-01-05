@@ -1,3 +1,3 @@
 # postman_backup
 
-Backup for postaman collections for open APIs.
+Backup for Postman's collections for open APIs.
